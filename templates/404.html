@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block error_404 %}
+
+<main class="container mt-3">
+
+    <section class="jumbotron text-center mt-3" >
+      <h1 class="display-4">Ничего нету 404</h1>
+      <img src= {{ url_for('static', filename='images/pepe.png') }} width="250" class="w-45" alt=""/>
+    </section>
+
+
+
+</main>
+
+{% endblock %}
