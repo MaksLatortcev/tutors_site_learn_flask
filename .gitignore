@@ -1,4 +1,4 @@
 # Project exclude paths
 /venv/
 /data/booking.json
-/data/request.json.json
+/data/request.json
