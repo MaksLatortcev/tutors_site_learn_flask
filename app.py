@@ -39,8 +39,10 @@ def all_teachers():
 def goal(goal):
     goal_teachers = get_goal_teachers(goal)
     emoji = Goals().emoji[goal]
+    goals_ru = Goals().names_goals()
     output = render_template("goal.html",
                              goal=goal,
+                             goals_ru=goals_ru,
                              goal_teachers=goal_teachers,
                              emoji=emoji)
     return output
