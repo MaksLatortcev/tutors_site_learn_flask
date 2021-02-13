@@ -36,3 +36,13 @@ class Goals:
             names.update(temp_data)
 
         return names
+
+    def names_ru_goal(self, goal):
+        """
+        Функция, которая извлекает русские названия целей и прикрепляет к них  значёк
+        :return: dict
+        """
+
+        goal_ru = self.find_goals()
+
+        return goal_ru[goal]
